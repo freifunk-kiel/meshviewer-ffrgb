@@ -4,30 +4,25 @@
   "nodeInfos": [
     {
       "name": "Clientstatistik",
-      "href": "https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/",
-      "image": "https://grafana.regensburg.freifunk.net/render/dashboard-solo/db/ffrgb-all-nodes?panelId=1&from=now-7d&var-nodeid={NODE_ID}&var-host={NODE_NAME}&width=650&height=350&theme=light&_t={TIME}",
-      "title": "Knoten {NODE_ID} - weiteren Statistiken"
-    },
-    {
-      "name": "Trafficstatistik",
-      "href": "https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/",
-      "image": "https://grafana.regensburg.freifunk.net/render/dashboard-solo/db/ffrgb-all-nodes?panelId=2&from=now-7d&var-nodeid={NODE_ID}&var-host={NODE_NAME}&width=650&height=350&theme=light&_t={TIME}",
+      "href": "https://grafana.freifunk.in-kiel.de/dashboard/db/nodeinfo?panelId=1&width=1200&height=600&from=now-7d&to=now&var-node={NODE_ID}",
+      "image": "https://grafana.freifunk.in-kiel.de/render/dashboard-solo/db/nodeinfo?panelId=1&width=600&height=300&from=now-7d&to=now&var-node={NODE_ID}",
       "title": "Knoten {NODE_ID} - weiteren Statistiken"
     }
   ],
   "globalInfos": [
     {
       "name": "Statistik",
-      "href": "https://regensburg.freifunk.net/netz/statistik/",
-      "image": "https://grafana.regensburg.freifunk.net/render/dashboard-solo/db/ffrgb-network-wide-stats?panelId=11&from=now-1y&width=600&height=350&theme=light",
-      "title": "Jahresstatistik - weiteren Statistiken"
+      "href": "https://grafana.freifunk.in-kiel.de/dashboard/db/ffki-status",
+      "image": "https://grafana.freifunk.in-kiel.de/render/dashboard-solo/db/ffki-status?editorTab=Metrics&panelId=1&theme=light&width=600&height=300&from=now-14d&to=now",
+      "title": "Verbundene Clients und Knoten in den letzten 14 Tagen"
     }
   ],
   // Array of data provider are supported
   "dataPath": [
-    "https://regensburg.freifunk.net/data/"
+    "https://map.freifunk.in-kiel.de/yanic/"
+    // nodes.json v2: "https://hopglass.freifunk.in-kiel.de/"
   ],
-  "siteName": "Freifunk Regensburg",
+  "siteName": "Freifunk Kiel",
   "mapLayers": [
     {
       "name": "Freifunk Regensburg",
@@ -95,23 +90,19 @@
   "fixedCenter": [
     // Northwest
     [
-      49.3522,
-      11.7752
+      54.3777,
+      10.0900
     ],
     // Southeast
     [
-      48.7480,
-      12.8917
+      54.3107,
+      10.2111
     ]
   ],
   "siteNames": [
     {
-      "site": "ffrgb-bat15",
-      "name": "Regensburg"
-    },
-    {
-      "site": "ffrgb",
-      "name": "Regensburg"
+      "site": "ffki",
+      "name": "Kiel"
     }
   ]
 }
